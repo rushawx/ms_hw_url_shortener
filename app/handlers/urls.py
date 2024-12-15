@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
 
-from db.engine import Url
-from models.urls import UrlFullRequest, UrlFullResponse, UrlResponse, UrlShortResponse
-from utils.utils import get_db, shorten
+from app.db.engine import Url
+from app.models.urls import UrlFullRequest, UrlResponse, UrlShortResponse
+from app.utils.utils import get_db, shorten
 
 router = APIRouter(prefix="/urls", tags=["urls"])
 

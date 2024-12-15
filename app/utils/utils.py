@@ -2,7 +2,7 @@ import math
 import random
 import string
 
-from db.engine import session
+from app.db.engine import session
 
 
 async def get_db():
